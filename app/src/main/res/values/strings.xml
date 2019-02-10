@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">Recpag</string>
+    <string name="app_name">RecPag</string>
+
+    <!--Cards-->
+    <string name="history">Histórico</string>
+    <string name="wallet">Carteira</string>
+    <string name="pay">Pagar</string>
+    <string name="receive">Receber</string>
+
+    <string name="subtitle_pay">Pagamento com facilidade e segurança!</string>
+    <string name="subtitle_receive">Receba de forma mais rápida e segura!</string>
+
+    <!--Menu-->
+    <string name="configuration">Configuração</string>
+    <string name="tutorial">Tutorial</string>
+
+    <!--Generated QrCode-->
+    <string name="money">R$</string>
+    <string name="generate_qrcode">Gerar QRCode</string>
+
+    <string name="yes">SIM</string>
+    <string name="no">NÃO</string>
 </resources>

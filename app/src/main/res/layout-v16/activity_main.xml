@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_pay"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="@color/colorPay"
+            app:cardCornerRadius="5dp"
+            android:elevation="4dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:id="@+id/tv_title_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pay"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/subtitle_pay"
+                android:layout_marginTop="40dp"
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/img_pay"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/qrcode"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right|center_vertical"/>
+
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_receive"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardCornerRadius="5dp"
+        android:elevation="4dp"
+        android:backgroundTint="@color/colorReceiver"
+        android:layout_below="@id/card_pay"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_title_receive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/receive"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_subtitle_receive"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="@string/subtitle_receive"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/img_receive"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginRight="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pagamentopelocelular"
+                android:layout_gravity="right|center_vertical"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_history"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:cardCornerRadius="5dp"
+        android:elevation="4dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorHistory"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/tv_title_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/history"
+                android:textSize="14sp"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_alignParentBottom="true"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/img_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/baseline_receipt_white_48"
+                android:layout_gravity="center_horizontal|center_vertical"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_wallet"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        app:cardCornerRadius="5dp"
+        android:elevation="4dp"
+        android:backgroundTint="@color/colorWallet"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_title_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wallet"
+                android:textSize="14sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/img_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_payment_white_48"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal|center_vertical"/>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

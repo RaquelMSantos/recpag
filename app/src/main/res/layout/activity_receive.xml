@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ReceiveActivity">
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/money"
+        android:textColor="@color/colorReceiver"
+        android:textSize="38dp" />
+
+    <EditText
+        android:id="@+id/et_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:inputType="numberDecimal"
+        android:textSize="38dp"
+        android:layout_toRightOf="@id/tv_money"
+        android:textColor="@color/colorReceiver"/>
+
+    <ImageView
+        android:id="@+id/img_qrCode"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/loading"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/et_value"/>
+
+    <Button
+        android:id="@+id/btn_qrCode"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/generate_qrcode"
+        android:textColor="@android:color/white"
+        android:background="@color/colorReceiver"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:layout_margin="15dp"/>
+
+</RelativeLayout>
